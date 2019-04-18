@@ -36,6 +36,11 @@ public class MainActivity extends AppCompatActivity {
         contactsList.add(new Contacts("Rajesh Himal","12345678",R.drawable.rajesh));
         contactsList.add(new Contacts("Saugat Malla","12345678",R.drawable.saugat));
 
+        contactsList.add(new Contacts("Emma Stone","12345678",R.drawable.noavatar));
+        contactsList.add(new Contacts("Ram Thapa","12345678",R.drawable.noavatar));
+        contactsList.add(new Contacts("Nisha Shahi","12345678",R.drawable.noavatar));
+        contactsList.add(new Contacts("Alisha Pandey","12345678",R.drawable.noavatar));
+
 
         ContactsAdapter contactsAdapter = new ContactsAdapter(this,contactsList);
         recyclerView.setAdapter(contactsAdapter);
