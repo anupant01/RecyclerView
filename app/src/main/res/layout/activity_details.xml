@@ -9,9 +9,20 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/circimg"
-        android:layout_width="100dp"
-        android:layout_height="100dp" />
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="85dp" />
 
+
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Name:"
+        android:textSize="20sp"
+        android:layout_below="@id/circimg"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
 
     <TextView
         android:id="@+id/tvfullname"
@@ -19,20 +30,30 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:layout_toEndOf="@id/circimg"
-        android:hint="Full Name"
+        android:layout_toEndOf="@id/tvname"
+        android:layout_below="@id/circimg"
         android:textSize="20sp"
         />
+
+    <TextView
+        android:id="@+id/tvpnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone No:"
+        android:textSize="20sp"
+        android:layout_below="@id/tvname"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
 
     <TextView
         android:id="@+id/tvphoneno"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/circimg"
         android:layout_below="@id/tvfullname"
         android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
-        android:hint="Phone No"
-        android:textSize="20sp"/>
+        android:layout_toEndOf="@id/tvpnumber"
+
+        android:textSize="20sp" />
 
 </RelativeLayout>
