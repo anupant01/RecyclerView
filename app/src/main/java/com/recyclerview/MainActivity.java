@@ -17,12 +17,13 @@ public class MainActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        SearchView svsearch = findViewById(R.id.svsearch);
+
 
 
         recyclerView = findViewById(R.id.recyclerview);
