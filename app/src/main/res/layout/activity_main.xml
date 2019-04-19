@@ -4,7 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
+
+    <SearchView
+        android:id="@+id/svsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search Here"
+        android:iconifiedByDefault="false"
+        />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerview"
@@ -12,6 +21,9 @@
         android:layout_height="match_parent">
 
     </android.support.v7.widget.RecyclerView>
+
+
+
 
 
 
