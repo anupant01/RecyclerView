@@ -5,11 +5,15 @@ public class Contacts {
     private String name;
     private String phoneno;
     private int imageId;
+    private String email;
+    private String address;
 
-    public Contacts(String name, String phoneno, int imageId) {
+    public Contacts(String name, String phoneno, int imageId, String email, String address) {
         this.name = name;
         this.phoneno = phoneno;
         this.imageId = imageId;
+        this.email=email;
+        this.address=address;
     }
 
 
@@ -35,5 +39,21 @@ public class Contacts {
 
     public void setImageId(int imageId) {
         this.imageId = imageId;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 }

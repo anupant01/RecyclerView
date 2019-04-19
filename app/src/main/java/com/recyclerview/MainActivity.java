@@ -29,21 +29,11 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerview);
 
         List<Contacts> contactsList =new ArrayList<>();
-        contactsList.add(new Contacts("Aakash Shrestha","12345678",R.drawable.aakash));
-        contactsList.add(new Contacts("Aashirman Joshi","12345678",R.drawable.aashirman));
-        contactsList.add(new Contacts("Anmol KC","12345678",R.drawable.anmol));
-        contactsList.add(new Contacts("Bhuwan KC","12345678",R.drawable.bhuwan));
-        contactsList.add(new Contacts("Dahayang Rai","12345678",R.drawable.dahayang));
-        contactsList.add(new Contacts("Nischal Basnet","12345678",R.drawable.nischal));
-        contactsList.add(new Contacts("Paul Shah","12345678",R.drawable.paul));
-        contactsList.add(new Contacts("Pradeep Khadka","12345678",R.drawable.pradeep));
-        contactsList.add(new Contacts("Rajesh Himal","12345678",R.drawable.rajesh));
-        contactsList.add(new Contacts("Saugat Malla","12345678",R.drawable.saugat));
 
-        contactsList.add(new Contacts("Emma Stone","12345678",R.drawable.noavatar));
-        contactsList.add(new Contacts("Ram Thapa","12345678",R.drawable.noavatar));
-        contactsList.add(new Contacts("Nisha Shahi","12345678",R.drawable.noavatar));
-        contactsList.add(new Contacts("Alisha Pandey","12345678",R.drawable.noavatar));
+        contactsList.add(new Contacts("Aakash Shrestha","123456",R.drawable.aakash,
+                "aakash@gmail.com","jorpati"));
+
+
 
 
         ContactsAdapter contactsAdapter = new ContactsAdapter(this,contactsList);

@@ -56,4 +56,45 @@
 
         android:textSize="20sp" />
 
+    <TextView
+        android:id="@+id/tvemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvpnumber"
+        android:text="Email:"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+    <TextView
+        android:id="@+id/tvemailad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tvemail"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tvphoneno"
+        />
+
+    <TextView
+        android:id="@+id/tvadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="20sp"
+        android:layout_below="@id/tvemail"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tvaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tvadd"
+        android:layout_below="@+id/tvemailad"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+
 </RelativeLayout>

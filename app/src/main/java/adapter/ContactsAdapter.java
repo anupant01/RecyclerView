@@ -43,6 +43,8 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.Contac
         contactsViewHolder.tvcontact.setText(contacts.getName());
         contactsViewHolder.tvphone.setText(contacts.getPhoneno());
 
+
+
         contactsViewHolder.imgprofile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,6 +53,8 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.Contac
                 intent.putExtra("image",contacts.getImageId());
                 intent.putExtra("name",contacts.getName());
                 intent.putExtra("phone",contacts.getPhoneno());
+                intent.putExtra("email",contacts.getEmail());
+                intent.putExtra("address",contacts.getAddress());
 
                 mContext.startActivity(intent);
 
